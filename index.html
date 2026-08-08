@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadrach Jimice Jr — Software Engineer &amp; Full-Stack Developer</title>
+<meta name="description" content="Shadrach Jimice Jr is a software engineer in Monrovia, Liberia building production web, mobile and data systems with Laravel, React, Flutter and Node.js. Available for projects.">
+<meta name="author" content="Shadrach Jimice Jr">
+<meta name="theme-color" content="#0B0D10">
+
+<!-- Open Graph / social sharing -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shadrach Jimice Jr — Software Engineer &amp; Full-Stack Developer">
+<meta property="og:description" content="I build production web, mobile and data systems — Laravel, React, Flutter, Node.js. Based in Monrovia, Liberia. Working worldwide.">
+<meta property="og:url" content="https://sha-drach.github.io/shadrach-jimice-jr-portfolio/">
+<meta property="og:image" content="https://sha-drach.github.io/shadrach-jimice-jr-portfolio/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230B0D10'/><text y='68' x='50' text-anchor='middle' font-size='52' font-family='Georgia,serif' fill='%23E4B363'>SJ</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ ICON SPRITE ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.73.5.99 5.24.99 11.5c0 4.86 3.15 8.98 7.52 10.43.55.1.75-.24.75-.53v-1.86c-3.06.67-3.71-1.48-3.71-1.48-.5-1.28-1.23-1.62-1.23-1.62-1-.68.08-.67.08-.67 1.11.08 1.69 1.14 1.69 1.14.98 1.69 2.58 1.2 3.21.92.1-.72.39-1.2.7-1.48-2.44-.28-5.01-1.22-5.01-5.45 0-1.2.43-2.19 1.13-2.96-.11-.28-.49-1.4.11-2.92 0 0 .93-.3 3.04 1.13a10.5 10.5 0 0 1 5.54 0c2.11-1.43 3.03-1.13 3.03-1.13.6 1.52.22 2.64.11 2.92.71.77 1.13 1.76 1.13 2.96 0 4.24-2.58 5.17-5.03 5.44.4.34.75 1.02.75 2.06v3.05c0 .29.2.64.76.53a10.53 10.53 0 0 0 7.51-10.43C23.01 5.24 18.27.5 12 .5Z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14Zm1.78 13.02H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35ZM12.05 21.8h-.01a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.79 9.79 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8a9.76 9.76 0 0 1 6.93 2.88 9.72 9.72 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.81 9.8ZM20.5 3.49A11.72 11.72 0 0 0 12.05 0C5.57 0 .3 5.26.3 11.73c0 2.07.54 4.09 1.57 5.87L.2 24l6.54-1.71a11.73 11.73 0 0 0 5.3 1.35h.01c6.47 0 11.74-5.26 11.74-11.73 0-3.14-1.22-6.08-3.44-8.3Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 6.5h18v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm0 .5 9 6.5L21 7"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M6.3 3h3l1.5 4.2-2 1.4a12.5 12.5 0 0 0 6.6 6.6l1.4-2L21 14.7v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.3 5.2 2 2 0 0 1 6.3 3Z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19h16"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h13m0 0-5.5-5.5M18 12l-5.5 5.5"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M14 4h6v6M20 4l-8.5 8.5M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m4 12.5 5 5L20 6.5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M16 5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.9"/><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M20 14.2A8.2 8.2 0 0 1 9.8 4 8.4 8.4 0 1 0 20 14.2Z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="m8.5 8-4.5 4 4.5 4M15.5 8l4.5 4-4.5 4"/></symbol>
+  <symbol id="i-mobile" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M10.5 18.5h3"/></symbol>
+  <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5.5" rx="7.5" ry="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="1.8" d="M4.5 5.5v13c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3v-13M4.5 12c0 1.66 3.36 3 7.5 3s7.5-1.34 7.5-3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M12 2.5 4.5 5.5v6c0 4.7 3.1 8.7 7.5 10 4.4-1.3 7.5-5.3 7.5-10v-6L12 2.5Z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M4 20h16M7 20v-6M12 20V6M17 20v-9"/></symbol>
+  <symbol id="i-teach" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="m12 3 9 4.5-9 4.5-9-4.5L12 3Z"/><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" d="M6.5 9.8v5.4c0 1.5 2.5 2.8 5.5 2.8s5.5-1.3 5.5-2.8V9.8M21 7.5V13"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+</svg>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="wrap header-inner">
+    <a href="#home" class="brand" aria-label="Shadrach Jimice Jr — home">
+      <span class="brand-mark">SJ</span>
+      <span class="brand-text">
+        <strong>Shadrach Jimice Jr</strong>
+        <small>Software Engineer</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="nav-cta">Hire me</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to light mode">
+        <svg class="ic ic-sun"><use href="#i-sun"></use></svg>
+        <svg class="ic ic-moon"><use href="#i-moon"></use></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <svg class="ic ic-open"><use href="#i-menu"></use></svg>
+        <svg class="ic ic-shut"><use href="#i-close"></use></svg>
+      </button>
+    </div>
+  </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+</header>
+<div class="nav-scrim" id="navScrim" hidden></div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+
+    <div class="hero-copy">
+      <p class="availability reveal">
+        <span class="pulse" aria-hidden="true"></span>
+        Available for new projects — Monrovia, Liberia &amp; remote worldwide
+      </p>
+
+      <h1 class="reveal">
+        I build software that<br>
+        <span class="display">actually ships.</span>
+      </h1>
+
+      <p class="hero-role reveal">
+        <span class="mono">&gt;</span>
+        <span id="roleRotator" class="role-rotator">Full-Stack Developer</span><span class="caret" aria-hidden="true"></span>
+      </p>
+
+      <p class="lede reveal">
+        I'm <strong>Shadrach Jimice Jr</strong> — a software engineer with a BSc (Hons) in Software
+        Engineering and 5+ years turning messy real-world problems into working systems:
+        national registration platforms, mobile apps, corporate CMS, and the databases underneath them.
+        If you need it designed, built, deployed and explained — that's the whole job I do.
+      </p>
+
+      <div class="hero-cta reveal">
+        <a href="#work" class="btn btn-primary">
+          See my work <svg class="ic"><use href="#i-arrow"></use></svg>
+        </a>
+        <a href="assets/Shadrach-Jimice-Jr-CV.pdf" class="btn btn-ghost" download>
+          <svg class="ic"><use href="#i-download"></use></svg> Download CV
+        </a>
+      </div>
+
+      <ul class="hero-social reveal" aria-label="Profiles">
+        <li><a href="https://github.com/SHA-DRACH" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#i-github"></use></svg></a></li>
+        <li><a href="https://www.linkedin.com/in/shadrach-jimice-jr-168389319" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"></use></svg></a></li>
+        <li><a href="https://wa.me/231778079167" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic"><use href="#i-whatsapp"></use></svg></a></li>
+        <li><a href="mailto:jimicejrs@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"></use></svg></a></li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="portrait">
+        <!-- Swap this <div> for: <img src="assets/profile.jpg" alt="Shadrach Jimice Jr"> -->
+        <div class="portrait-fallback" aria-hidden="true">SJ</div>
+        <div class="portrait-badge">
+          <svg class="ic"><use href="#i-check"></use></svg>
+          <span>BSc (Hons) Software Engineering<br><small>UNILAK, Kigali</small></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="wrap">
+    <ul class="stats reveal">
+      <li><strong data-count="5" data-suffix="+">5+</strong><span>Years building software &amp; data systems</span></li>
+      <li><strong data-count="3" data-suffix="">3</strong><span>Production systems designed &amp; shipped</span></li>
+      <li><strong data-count="6" data-suffix="">6</strong><span>Roles across dev, data &amp; ICT training</span></li>
+      <li><strong data-count="24" data-suffix="h">24h</strong><span>Typical reply time to new enquiries</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ WORK ============ -->
+<section class="section" id="work">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">Selected work</p>
+      <h2>Real systems. Real users. Real code.</h2>
+      <p class="section-sub">
+        Not tutorials or clones — these are full systems I architected, built and shipped end to end,
+        from database schema to deployed interface.
+      </p>
+    </header>
+
+    <div class="projects">
+
+      <!-- Project 01 -->
+      <article class="project reveal">
+        <div class="project-visual">
+          <div class="browser">
+            <div class="browser-bar"><span></span><span></span><span></span><em>campusconnect.lr</em></div>
+            <div class="browser-body cc">
+              <!-- Replace .browser-body content with: <img src="assets/project-campusconnect.png" alt="CampusConnect screens"> -->
+              <div class="mock-phone">
+                <div class="mock-row w70"></div>
+                <div class="mock-row w40"></div>
+                <div class="mock-card"></div>
+                <div class="mock-row w60"></div>
+                <div class="mock-card sm"></div>
+              </div>
+              <div class="mock-side">
+                <div class="mock-row w50"></div>
+                <div class="mock-row w80"></div>
+                <div class="mock-row w65"></div>
+                <div class="mock-row w35"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <p class="project-index">01 — Flagship</p>
+          <h3>CampusConnect Liberia</h3>
+          <p class="project-tag">Academic &amp; social networking platform for Liberian higher education</p>
+          <p>
+            A secure platform connecting students, lecturers and administrators across accredited
+            institutions in Liberia. Flutter mobile client on a Laravel REST API, with JWT auth,
+            role-based access for three actor types, real-time messaging over WebSockets and
+            offline-first local caching.
+          </p>
+          <ul class="project-points">
+            <li>Clean Architecture on mobile — Riverpod, go_router, Dio, Hive offline cache</li>
+            <li>Laravel 12 API with JWT auth, Reverb WebSockets and MySQL/MariaDB</li>
+            <li>Full design docs: system plan, architecture decision log, ER diagram &amp; API contract</li>
+          </ul>
+          <ul class="chips">
+            <li>Flutter</li><li>Dart</li><li>Laravel 12</li><li>PHP 8.2</li><li>MySQL</li><li>JWT</li><li>WebSockets</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/SHA-DRACH" target="_blank" rel="noopener" class="link-btn">
+              <svg class="ic"><use href="#i-github"></use></svg> Source
+            </a>
+            <a href="#contact" class="link-btn subtle">
+              <svg class="ic"><use href="#i-arrow"></use></svg> Ask for a walkthrough
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 02 -->
+      <article class="project reverse reveal">
+        <div class="project-visual">
+          <div class="browser">
+            <div class="browser-bar"><span></span><span></span><span></span><em>farmer-registry.gov</em></div>
+            <div class="browser-body nfrs">
+              <div class="mock-side">
+                <div class="mock-row w60"></div>
+                <div class="mock-row w45"></div>
+                <div class="mock-row w70"></div>
+                <div class="mock-row w30"></div>
+              </div>
+              <div class="mock-main">
+                <div class="mock-stat"></div>
+                <div class="mock-stat"></div>
+                <div class="mock-stat"></div>
+                <div class="mock-table"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <p class="project-index">02 — Government / NGO scale</p>
+          <h3>National Farmer Registration System</h3>
+          <p class="project-tag">Digital registry for farmer identity, verification and reporting</p>
+          <p>
+            A registration platform that replaces paper forms with a verified digital record for every
+            farmer. React front end over an Express API, with hashed credentials, admin role management,
+            email verification and SMS notification so registrations reach people who aren't online.
+          </p>
+          <ul class="project-points">
+            <li>React 19 interface with separated public registration and admin console flows</li>
+            <li>Express 5 + MySQL API with bcrypt hashing, JWT sessions and cascade-safe deletes</li>
+            <li>Email verification via Nodemailer and SMS delivery via Twilio</li>
+          </ul>
+          <ul class="chips">
+            <li>React 19</li><li>Node.js</li><li>Express 5</li><li>MySQL</li><li>JWT</li><li>Nodemailer</li><li>Twilio</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/SHA-DRACH" target="_blank" rel="noopener" class="link-btn">
+              <svg class="ic"><use href="#i-github"></use></svg> Source
+            </a>
+            <a href="#contact" class="link-btn subtle">
+              <svg class="ic"><use href="#i-arrow"></use></svg> Ask for a walkthrough
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 03 -->
+      <article class="project reveal">
+        <div class="project-visual">
+          <div class="browser">
+            <div class="browser-bar"><span></span><span></span><span></span><em>welldonegroup.com</em></div>
+            <div class="browser-body wd">
+              <div class="mock-hero"></div>
+              <div class="mock-grid">
+                <div></div><div></div><div></div><div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-body">
+          <p class="project-index">03 — Corporate</p>
+          <h3>WellDone Group Inc. — Website &amp; CMS</h3>
+          <p class="project-tag">Enterprise corporate site with a full content management back office</p>
+          <p>
+            A corporate platform covering four business divisions — mining &amp; quarry, procurement &amp;
+            logistics, medical equipment, and ICT services — with an admin CMS the client's own team runs:
+            team profiles, project galleries, media uploads and page content, no developer required.
+          </p>
+          <ul class="project-points">
+            <li>Laravel 12 / PHP 8.3 with a separate authenticated admin route layer</li>
+            <li>Media pipeline for avatars, team photos, project galleries and branding assets</li>
+            <li>Bootstrap 5 responsive front end backed by MySQL 8.4</li>
+          </ul>
+          <ul class="chips">
+            <li>Laravel 12</li><li>PHP 8.3</li><li>MySQL 8.4</li><li>Bootstrap 5</li><li>Blade</li><li>CMS</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/SHA-DRACH" target="_blank" rel="noopener" class="link-btn">
+              <svg class="ic"><use href="#i-github"></use></svg> Source
+            </a>
+            <a href="#contact" class="link-btn subtle">
+              <svg class="ic"><use href="#i-arrow"></use></svg> Ask for a walkthrough
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <p class="work-more reveal">
+      More repositories, experiments and coursework live on
+      <a href="https://github.com/SHA-DRACH" target="_blank" rel="noopener">GitHub <svg class="ic"><use href="#i-external"></use></svg></a>
+    </p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section alt" id="about">
+  <div class="wrap about-grid">
+
+    <div class="about-main reveal">
+      <p class="eyebrow">About</p>
+      <h2>Engineer first. Teacher second. Both make me easier to work with.</h2>
+      <p>
+        I hold a <strong>BSc (Hons) in Software Engineering</strong> from the University of Lay Adventists
+        of Kigali (UNILAK), Rwanda, and I'm currently reading for an <strong>MSc in Information
+        Technology</strong>. Over the last five years I've worked both sides of software: building
+        full-stack web and mobile systems, and running the data and MIS work that keeps organisations
+        honest about their results.
+      </p>
+      <p>
+        Today I'm based in <strong>Monrovia, Liberia</strong>, where I also serve as an
+        <strong>ICT Lecturer and Trainer</strong> — teaching software development, computer applications
+        and digital skills, and coordinating faculty events like the UNILAK Computing Faculty 2025 Seminar.
+        Teaching does something useful to an engineer: it forces you to explain your decisions in plain
+        language. Clients get the same benefit — no jargon, no mystery, no "trust me."
+      </p>
+      <p>
+        I work comfortably across the stack — <strong>Laravel, React, Flutter, Node.js, Python</strong> and
+        the <strong>MySQL</strong> schemas underneath — and I care most about the unglamorous parts:
+        does the data hold up, does it still work offline, can the client maintain it after I hand it over.
+      </p>
+
+      <div class="about-values">
+        <div><svg class="ic"><use href="#i-check"></use></svg><div><strong>I ship, then I document.</strong> Every project I hand over comes with setup steps, architecture notes and a database map.</div></div>
+        <div><svg class="ic"><use href="#i-check"></use></svg><div><strong>I build for real conditions.</strong> Patchy networks, low-end devices, users who aren't technical — designed in from the start.</div></div>
+        <div><svg class="ic"><use href="#i-check"></use></svg><div><strong>I answer fast.</strong> You'll hear back within a day, and you'll always know what stage your project is at.</div></div>
+      </div>
+    </div>
+
+    <aside class="about-side reveal">
+      <div class="card credential-card">
+        <h3>Credentials</h3>
+        <ul class="cred-list">
+          <li>
+            <strong>BSc (Hons) Software Engineering</strong>
+            <span>UNILAK — Kigali, Rwanda · 2022–2025</span>
+          </li>
+          <li>
+            <strong>MSc Information Technology</strong>
+            <span>In progress · Cloud, Cybersecurity, Enterprise Systems</span>
+          </li>
+          <li>
+            <strong>ALX Professional Foundations</strong>
+            <span>Certified · Professional &amp; technical foundations</span>
+          </li>
+          <li>
+            <strong>N@tcom Training Center</strong>
+            <span>Backend development &amp; web development certificates</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card quick-facts">
+        <h3>Quick facts</h3>
+        <dl>
+          <div><dt>Based in</dt><dd>Monrovia, Liberia</dd></div>
+          <div><dt>Works with</dt><dd>Clients worldwide, remote</dd></div>
+          <div><dt>Languages</dt><dd>English (fluent)</dd></div>
+          <div><dt>Engagements</dt><dd>Project, contract or full-time</dd></div>
+          <div><dt>Time zone</dt><dd>GMT / UTC+0</dd></div>
+        </dl>
+      </div>
+    </aside>
+
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">Services</p>
+      <h2>What you can hire me to do</h2>
+      <p class="section-sub">Pick one, or hand me the whole thing end to end.</p>
+    </header>
+
+    <div class="grid-3">
+      <article class="card service reveal">
+        <span class="service-ic"><svg class="ic"><use href="#i-code"></use></svg></span>
+        <h3>Web application development</h3>
+        <p>Custom web systems built on Laravel, React or Node.js — registration platforms, dashboards, portals, admin consoles. Responsive, secure, and yours to keep.</p>
+      </article>
+      <article class="card service reveal">
+        <span class="service-ic"><svg class="ic"><use href="#i-mobile"></use></svg></span>
+        <h3>Mobile app development</h3>
+        <p>Cross-platform Android and iOS apps in Flutter from one codebase — with offline support, push messaging and an API built to match.</p>
+      </article>
+      <article class="card service reveal">
+        <span class="service-ic"><svg class="ic"><use href="#i-database"></use></svg></span>
+        <h3>Database design &amp; administration</h3>
+        <p>Schema design, normalisation, indexing, migrations, backups and performance tuning on MySQL — plus the ER diagrams and data dictionary to go with it.</p>
+      </article>
+      <article class="card service reveal">
+        <span class="service-ic"><svg class="ic"><use href="#i-chart"></use></svg></span>
+        <h3>M&amp;E and MIS systems</h3>
+        <p>Management information systems for development projects: data collection, baseline and endline surveys, clean pipelines and reports decision-makers can actually act on.</p>
+      </article>
+      <article class="card service reveal">
+        <span class="service-ic"><svg class="ic"><use href="#i-shield"></use></svg></span>
+        <h3>ICT support &amp; systems</h3>
+        <p>Computer systems, networking, hardware and software troubleshooting, user administration and practical security hygiene for small and mid-size organisations.</p>
+      </article>
+      <article class="card service reveal">
+        <span class="service-ic"><svg class="ic"><use href="#i-teach"></use></svg></span>
+        <h3>ICT training &amp; lecturing</h3>
+        <p>Hands-on training for teams and students — programming, computer applications, digital skills — delivered by someone who does the work, not just the slides.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section alt" id="skills">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">Toolkit</p>
+      <h2>Technologies I work in daily</h2>
+    </header>
+
+    <div class="skill-groups">
+      <div class="skill-group reveal">
+        <h3>Languages</h3>
+        <ul class="chips lg"><li>JavaScript</li><li>PHP</li><li>Python</li><li>Dart</li><li>SQL</li><li>HTML5</li><li>CSS3</li></ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Frameworks &amp; libraries</h3>
+        <ul class="chips lg"><li>Laravel</li><li>React.js</li><li>Flutter</li><li>Node.js</li><li>Express</li><li>Django</li><li>Bootstrap</li><li>Riverpod</li></ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Data &amp; backend</h3>
+        <ul class="chips lg"><li>MySQL</li><li>MariaDB</li><li>Database design</li><li>REST APIs</li><li>JWT auth</li><li>WebSockets</li><li>Migrations</li></ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Systems &amp; ICT</h3>
+        <ul class="chips lg"><li>Networking</li><li>Cloud computing</li><li>Cybersecurity basics</li><li>Hardware support</li><li>System administration</li><li>MS Office</li></ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Tools &amp; workflow</h3>
+        <ul class="chips lg"><li>Git &amp; GitHub</li><li>Composer</li><li>npm</li><li>Postman</li><li>Laragon / XAMPP</li><li>VS Code</li></ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Beyond code</h3>
+        <ul class="chips lg"><li>System analysis &amp; design</li><li>Monitoring &amp; evaluation</li><li>Technical documentation</li><li>Training delivery</li><li>Stakeholder communication</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <header class="section-head reveal">
+      <p class="eyebrow">Experience</p>
+      <h2>Where I've done the work</h2>
+      <p class="section-sub">Six roles across development, data and education — the range is the point.</p>
+    </header>
+
+    <ol class="timeline">
+      <li class="reveal">
+        <h3>ICT Lecturer &amp; ICT Trainer</h3>
+        <p class="tl-meta">Monrovia, Liberia · Current</p>
+        <p>Teaching software development, computer applications and digital technologies; mentoring students through real projects and coordinating faculty seminars on computing, cybersecurity and IT governance.</p>
+      </li>
+      <li class="reveal">
+        <h3>Software Engineer / Full-Stack Developer</h3>
+        <p class="tl-meta">Project &amp; contract work</p>
+        <p>Designing and building web and mobile systems end to end — requirements, database schema, REST APIs, front-end interfaces, authentication, deployment and handover documentation.</p>
+      </li>
+      <li class="reveal">
+        <h3>Web &amp; Mobile Developer</h3>
+        <p class="tl-meta">Client engagements</p>
+        <p>Responsive websites and cross-platform mobile apps using Laravel, React, Flutter and Node.js, with content management back offices clients can operate themselves.</p>
+      </li>
+      <li class="reveal">
+        <h3>Database Administrator</h3>
+        <p class="tl-meta">Systems &amp; data work</p>
+        <p>Designing, securing, maintaining and optimising MySQL databases for production applications — schema design, indexing, integrity constraints, backups and migrations.</p>
+      </li>
+      <li class="reveal">
+        <h3>Monitoring, Evaluation &amp; MIS</h3>
+        <p class="tl-meta">Community development projects · 5+ years</p>
+        <p>Developing and managing MIS platforms, running baseline and endline surveys, supervising data entry, and producing analytical reports that fed directly into programme decisions.</p>
+      </li>
+      <li class="reveal">
+        <h3>ICT Assistant</h3>
+        <p class="tl-meta">Technical support</p>
+        <p>Frontline support for computer systems and networks: hardware and software troubleshooting, user account administration, and keeping day-to-day operations running.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="contact-shell reveal">
+
+      <div class="contact-left">
+        <p class="eyebrow">Let's work together</p>
+        <h2>Tell me what you're building.<br>I'll tell you how I'd build it.</h2>
+        <p class="contact-lede">
+          No forms that go nowhere. Message me and you'll get a real reply — usually within 24 hours —
+          with honest scope, timeline and cost. First conversation is free, and there's no obligation after it.
+        </p>
+
+        <ul class="contact-methods">
+          <li>
+            <a href="mailto:jimicejrs@gmail.com?subject=Project%20enquiry%20for%20Shadrach">
+              <span class="cm-ic"><svg class="ic"><use href="#i-mail"></use></svg></span>
+              <span class="cm-text"><small>Email — best for details</small><strong>jimicejrs@gmail.com</strong></span>
+            </a>
+            <button class="copy-btn" type="button" data-copy="jimicejrs@gmail.com" aria-label="Copy email address">
+              <svg class="ic"><use href="#i-copy"></use></svg>
+            </button>
+          </li>
+          <li>
+            <a href="https://wa.me/231778079167?text=Hi%20Shadrach%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener">
+              <span class="cm-ic"><svg class="ic"><use href="#i-whatsapp"></use></svg></span>
+              <span class="cm-text"><small>WhatsApp — fastest reply</small><strong>+231 778 079 167</strong></span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+231778079167">
+              <span class="cm-ic"><svg class="ic"><use href="#i-phone"></use></svg></span>
+              <span class="cm-text"><small>Call</small><strong>+231 778 079 167 · +250 790 138 594</strong></span>
+            </a>
+          </li>
+          <li>
+            <span class="static">
+              <span class="cm-ic"><svg class="ic"><use href="#i-pin"></use></svg></span>
+              <span class="cm-text"><small>Based in</small><strong>Monrovia, Liberia · working remote worldwide</strong></span>
+            </span>
+          </li>
+        </ul>
+
+        <ul class="hero-social small" aria-label="Profiles">
+          <li><a href="https://github.com/SHA-DRACH" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#i-github"></use></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/shadrach-jimice-jr-168389319" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"></use></svg></a></li>
+        </ul>
+      </div>
+
+      <div class="contact-right">
+        <form class="contact-form" id="contactForm" novalidate>
+          <h3>Send a project brief</h3>
+          <p class="form-note">Takes 60 seconds. The more detail, the more useful my first reply.</p>
+
+          <div class="field">
+            <label for="cf-name">Your name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required placeholder="Jane Doe">
+            <span class="err" data-for="cf-name"></span>
+          </div>
+
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required placeholder="jane@company.com">
+            <span class="err" data-for="cf-email"></span>
+          </div>
+
+          <div class="field">
+            <label for="cf-type">What do you need?</label>
+            <select id="cf-type" name="type">
+              <option>Web application</option>
+              <option>Mobile app (Flutter)</option>
+              <option>Website + CMS</option>
+              <option>Database design / administration</option>
+              <option>M&amp;E / MIS system</option>
+              <option>ICT support or training</option>
+              <option>Something else</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="cf-message">Project details</label>
+            <textarea id="cf-message" name="message" rows="5" required placeholder="What are you building, who is it for, and when do you need it?"></textarea>
+            <span class="err" data-for="cf-message"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary full">
+            Send brief <svg class="ic"><use href="#i-arrow"></use></svg>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          <p class="form-fine">Prefer email or WhatsApp? Use the links on the left — same inbox, same person.</p>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark">SJ</span>
+      <div>
+        <strong>Shadrach Jimice Jr</strong>
+        <p>Software Engineer · Full-Stack Developer · ICT Professional</p>
+      </div>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <ul class="footer-social" aria-label="Profiles">
+      <li><a href="https://github.com/SHA-DRACH" target="_blank" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#i-github"></use></svg></a></li>
+      <li><a href="https://www.linkedin.com/in/shadrach-jimice-jr-168389319" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"></use></svg></a></li>
+      <li><a href="https://wa.me/231778079167" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic"><use href="#i-whatsapp"></use></svg></a></li>
+      <li><a href="mailto:jimicejrs@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"></use></svg></a></li>
+    </ul>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>&copy; <span id="year">2026</span> Shadrach Jimice Jr. Built from scratch with HTML, CSS and JavaScript.</p>
+    <a href="#home" class="to-top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
