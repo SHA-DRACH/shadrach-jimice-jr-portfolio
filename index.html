@@ -137,7 +137,10 @@
 
     <div class="hero-visual reveal">
       <div class="portrait">
-        <!-- Swap this <div> for: <img src="assets/profile.jpg" alt="Shadrach Jimice Jr"> -->
+        <!-- Drop your photo in at assets/profile.jpg. Until that file exists the
+             onerror handler falls back to the "SJ" monogram rather than a broken image. -->
+        <img src="assets/profile.jpg" alt="Shadrach Jimice Jr working at his laptop"
+             onerror="this.closest('.portrait').classList.add('no-photo'); this.remove();">
         <div class="portrait-fallback" aria-hidden="true">SJ</div>
         <div class="portrait-badge">
           <svg class="ic"><use href="#i-check"></use></svg>
