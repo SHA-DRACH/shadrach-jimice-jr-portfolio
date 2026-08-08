@@ -106,7 +106,7 @@ npx serve .
 | Any text, section order, links | `index.html` |
 | Colours, spacing, fonts | the `:root` / `[data-theme]` blocks at the top of `css/style.css` |
 | The rotating job titles in the hero | the `words` array in `js/script.js` |
-| Contact email or phone | search `jimicejrs@gmail.com` / `231778079617` in `index.html`, and `CONTACT_EMAIL` in `js/script.js` |
+| Contact email or phone | search `jimicejrs@gmail.com`, `231778079617` (call) or `250790138594` (WhatsApp) in `index.html`, and `CONTACT_EMAIL` in `js/script.js` |
 
 The accent colour is one variable — `--accent` — set separately for dark and light themes.
 Change those two values and the whole site re-skins.

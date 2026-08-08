@@ -468,6 +468,20 @@ h3 { font-size: 1.15rem; }
 .card h3 { font-size: 1rem; letter-spacing: .01em; margin-bottom: 1.1rem; }
 .cred-list { display: grid; gap: 1rem; }
 .cred-list li { padding-left: 1.1rem; border-left: 2px solid var(--accent); }
+.cred-list li.has-logo { display: flex; align-items: center; gap: .8rem; }
+/* Both logos sit on a white plate: they are dark-on-white marks and would
+   otherwise vanish into the dark theme. */
+.cred-logo, .project-client img {
+  flex: none; object-fit: contain;
+  background: #fff; border-radius: 9px; padding: 4px;
+  border: 1px solid var(--border);
+}
+.cred-logo { width: 46px; height: 46px; }
+
+.project-client { display: flex; align-items: center; gap: .7rem; margin-bottom: .9rem; }
+.project-client img { width: 42px; height: 42px; border-radius: 10px; }
+.project-client span { font-size: .86rem; color: var(--muted); }
+.project-client strong { color: var(--text); font-weight: 600; }
 .cred-list strong { display: block; font-size: .92rem; font-weight: 600; }
 .cred-list span { display: block; font-size: .82rem; color: var(--muted); margin-top: .15rem; }
 .quick-facts dl { display: grid; gap: .75rem; }
