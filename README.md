@@ -32,9 +32,10 @@ These are the only placeholders left in the site.
 **1. Profile photo** — save your photo as `assets/profile.jpg`. No code change needed; the hero
 already points at that path.
 
-Until the file exists, a styled "SJ" monogram shows in its place — it looks deliberate, not broken.
-The image is cropped square with `object-position: 50% 30%` so a face sitting high in the frame
-survives the crop; adjust that value in `css/style.css` if yours sits differently.
+Until the file exists the hero card shows the UNILAK crest instead — it looks deliberate, not
+broken. Once the photo lands, the crest drops back to a faint watermark behind it. The image is
+cropped square with `object-position: 50% 30%` so a face sitting high in the frame survives the
+crop; adjust that value in `css/style.css` if yours sits differently.
 
 **2. CV** — export your CV as PDF and save it as `assets/Shadrach-Jimice-Jr-CV.pdf`.
 The "Download CV" button in the hero already points there.

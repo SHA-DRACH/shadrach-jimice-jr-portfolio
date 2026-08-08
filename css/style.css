@@ -314,13 +314,28 @@ h3 { font-size: 1.15rem; }
   background: linear-gradient(150deg, var(--surface-2), var(--surface));
   box-shadow: var(--shadow);
 }
+/* UNILAK crest watermarked into the card. Renders nothing until
+   assets/logo-unilak.png exists, so a missing file costs nothing. */
+.portrait::before {
+  content: ""; position: absolute; inset: 14%; z-index: 0; pointer-events: none;
+  background: url('../assets/logo-unilak.png') center / contain no-repeat;
+  opacity: .13;
+}
+[data-theme="light"] .portrait::before { opacity: .16; }
+/* With no photo the crest is the card's only content, so it steps forward
+   from watermark to subject. Behind a photo it stays a faint watermark. */
+.portrait.no-photo::before { inset: 11%; opacity: .62; }
+[data-theme="light"] .portrait.no-photo::before { opacity: .7; }
+
 .portrait img {
+  position: relative; z-index: 1;
   width: 100%; height: 100%; border-radius: 26px;
   object-fit: cover; object-position: 50% 30%; /* favours the face when cropped tall */
 }
 /* Shown only if assets/profile.jpg is missing — see the onerror in index.html. */
 .portrait-fallback { display: none; }
 .portrait.no-photo .portrait-fallback {
+  position: relative; z-index: 1; /* above the UNILAK watermark */
   width: 100%; height: 100%; border-radius: 26px;
   display: grid; place-items: center;
   font-family: var(--font-display); font-size: clamp(4rem, 12vw, 6.5rem); font-weight: 700;
