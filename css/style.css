@@ -193,13 +193,16 @@ h3 { font-size: 1.15rem; }
 .site-header.stuck .header-inner { height: 66px; transition: height var(--t); }
 
 .brand { display: flex; align-items: center; gap: .7rem; margin-right: auto; }
+/* The J-Sha Dra mark. It sits on its own light background, so it gets a white
+   plate and a hairline rather than the accent tile the old "SJ" monogram used. */
 .brand-mark {
   width: 40px; height: 40px; flex: none; border-radius: 11px;
-  display: grid; place-items: center;
-  font-family: var(--font-display); font-weight: 700; font-size: 1.05rem;
-  background: var(--accent); color: var(--accent-ink);
-  box-shadow: 0 6px 18px -8px color-mix(in srgb, var(--accent) 70%, transparent);
+  object-fit: cover; background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 18px -10px rgba(0, 0, 0, .55);
+  transition: transform var(--t), box-shadow var(--t);
 }
+.brand:hover .brand-mark { transform: translateY(-1px) scale(1.04); }
 .brand-text { display: flex; flex-direction: column; line-height: 1.2; }
 .brand-text strong { font-size: .95rem; font-weight: 600; letter-spacing: -.01em; }
 .brand-text small { font-size: .74rem; color: var(--muted); }

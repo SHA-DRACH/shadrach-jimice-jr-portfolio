@@ -4,14 +4,17 @@
 
 | File | What it is |
 | --- | --- |
-| `logo-jsha.jpg` | Your J-Sha Dra brand mark — the source for the favicons |
+| `logo-jsha.jpg` | Your J-Sha Dra brand mark — the source everything else is cut from |
+| `logo-mark.png` | Header and footer logo: the JSH monogram, letterboxed on white at 160px (4× its 40px display size) |
 | `favicon-32.png`, `favicon-48.png` | Browser tab icon, cropped to the JSH monogram (the wordmark turns to mush below ~64px) |
 | `favicon-180.png` | Apple touch icon — the full circular mark, which reads fine at that size |
 | `logo-unilak.png` | UNILAK crest, white background keyed out to transparency so it works as the hero watermark |
 | `logo-welldone.jpg` | WellDone Group mark, resized 1170px → 256px (234KB → 23KB) |
 
-Regenerate the favicons from `logo-jsha.jpg` if the brand mark ever changes; the crop box used for
-the small sizes was `x=200 y=170 w=560 h=560` on the 1170×1157 original.
+If the brand mark ever changes, regenerate these from the new source. On the 1170×1157 original the
+monogram sits at roughly `x=240 y=130 w=500 h=700` — everything except `favicon-180.png` is cut from
+that box, because the "J-Sha Dra" wordmark is unreadable below about 64px and only the monogram
+survives at favicon and header sizes.
 
 ## Still to add
 
