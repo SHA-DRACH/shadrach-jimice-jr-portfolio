@@ -10,6 +10,8 @@
 | `favicon-180.png` | Apple touch icon — the full circular mark, which reads fine at that size |
 | `logo-unilak.png` | UNILAK crest, white background keyed out to transparency so it works as the hero watermark |
 | `logo-welldone.jpg` | WellDone Group mark, resized 1170px → 256px (234KB → 23KB) |
+| `profile.jpg` | Hero photo — 800×800 square cut from `profile-full.jpg` (crop box `x=210 y=40 side=660`) |
+| `profile-full.jpg` | The original 1080×718 landscape shot, kept so the crop can be redone |
 
 If the brand mark ever changes, regenerate these from the new source. On the 1170×1157 original the
 monogram sits at roughly `x=240 y=130 w=500 h=700` — everything except `favicon-180.png` is cut from
@@ -20,7 +22,6 @@ survives at favicon and header sizes.
 
 | File | What it is | Notes |
 | --- | --- | --- |
-| `profile.jpg` | Your photo for the hero | Square, ~800×800px. Already wired — just drop the file in |
 | `Shadrach-Jimice-Jr-CV.pdf` | Your CV | Wired to the hero "Download CV" button |
 | `project-campusconnect.png` | CampusConnect screenshot | ~1600×1000px |
 | `project-farmer-registry.png` | Farmer Registration screenshot | ~1600×1000px |

@@ -308,43 +308,30 @@ h3 { font-size: 1.15rem; }
 .hero-social a .ic { width: 18px; height: 18px; }
 .hero-social.small a { width: 38px; height: 38px; }
 
-/* Portrait */
+/* Intro: the photo sits beside the opening paragraph, not in the card. */
+.intro { display: flex; align-items: flex-start; gap: 1.1rem; }
+.intro-avatar {
+  width: 78px; height: 78px; flex: none; border-radius: 50%;
+  object-fit: cover; object-position: 50% 25%;
+  border: 2px solid color-mix(in srgb, var(--accent) 55%, transparent);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Portrait card — the UNILAK crest is its subject. */
 .hero-visual { display: flex; justify-content: center; }
 .portrait {
-  position: relative; width: min(100%, 360px); aspect-ratio: 4 / 4.6;
+  position: relative; width: min(100%, 360px);
   border-radius: 26px; overflow: visible;
   border: 1px solid var(--border);
   background: linear-gradient(150deg, var(--surface-2), var(--surface));
   box-shadow: var(--shadow);
 }
-/* UNILAK crest watermarked into the card. Renders nothing until
-   assets/logo-unilak.png exists, so a missing file costs nothing. */
-.portrait::before {
-  content: ""; position: absolute; inset: 14%; z-index: 0; pointer-events: none;
-  background: url('../assets/logo-unilak.png') center / contain no-repeat;
-  opacity: .13;
+.portrait-crest {
+  width: 100%; aspect-ratio: 1; border-radius: 26px;
+  background: url('../assets/logo-unilak.png') center / 74% no-repeat;
+  opacity: .72;
 }
-[data-theme="light"] .portrait::before { opacity: .16; }
-/* With no photo the crest is the card's only content, so it steps forward
-   from watermark to subject. Behind a photo it stays a faint watermark. */
-.portrait.no-photo::before { inset: 11%; opacity: .62; }
-[data-theme="light"] .portrait.no-photo::before { opacity: .7; }
-
-.portrait img {
-  position: relative; z-index: 1;
-  width: 100%; height: 100%; border-radius: 26px;
-  object-fit: cover; object-position: 50% 30%; /* favours the face when cropped tall */
-}
-/* Shown only if assets/profile.jpg is missing — see the onerror in index.html. */
-.portrait-fallback { display: none; }
-.portrait.no-photo .portrait-fallback {
-  position: relative; z-index: 1; /* above the UNILAK watermark */
-  width: 100%; height: 100%; border-radius: 26px;
-  display: grid; place-items: center;
-  font-family: var(--font-display); font-size: clamp(4rem, 12vw, 6.5rem); font-weight: 700;
-  color: var(--accent); opacity: .32; letter-spacing: -.04em;
-  background: radial-gradient(circle at 50% 35%, color-mix(in srgb, var(--accent) 12%, transparent), transparent 62%);
-}
+[data-theme="light"] .portrait-crest { opacity: .8; }
 .portrait::after {
   content: ""; position: absolute; inset: -1px; border-radius: 26px; pointer-events: none;
   background: linear-gradient(160deg, color-mix(in srgb, var(--accent) 30%, transparent), transparent 45%);
@@ -643,13 +630,10 @@ h3 { font-size: 1.15rem; }
      The badge stops floating and becomes a strip inside the card. */
   .hero-visual { justify-content: flex-start; margin-top: 2.5rem; }
   .portrait {
-    width: min(100%, 300px); aspect-ratio: auto;
+    width: min(100%, 300px);
     display: flex; flex-direction: column; padding-bottom: .9rem;
   }
-  .portrait img, .portrait.no-photo .portrait-fallback {
-    aspect-ratio: 1; height: auto; border-radius: 26px 26px 0 0;
-  }
-  .portrait.no-photo .portrait-fallback { font-size: 3.75rem; }
+  .portrait-crest { border-radius: 26px 26px 0 0; }
   .portrait-badge {
     position: static; inset: auto; margin: .9rem .9rem 0;
     border: 0; box-shadow: none; background: transparent; padding: 0;
